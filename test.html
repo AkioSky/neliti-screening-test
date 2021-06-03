@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Neliti Developer Screening Test</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="pandoc.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- Compile with: pandoc -s test.md -c pandoc.css -o test.html --metadata pagetitle="Neliti Developer Screening Test" -->
+<center>
+<p><img src="neliti.svg" alt="Neliti logo" width="300" /> </p>
+<h1 id="neliti-developer-screening-test">Neliti Developer Screening Test</h1>
+</center>
+<p>Welcome to Neliti! This is a brief screening test so we can get an idea of your knowledge of our stack - Python, Django and ES6. Submit your answer by email to <code>anton@neliti.com</code> in whatever form you think is best.</p>
+<ul>
+<li>All answers should include a short explanation of your answer alongside the code.</li>
+<li>If something is ambiguous, make a reasonable assumption, state the assumption in your answer and continue.</li>
+<li>Use of external libraries is OK - use your judgement.</li>
+<li>Code efficiency, clarity and style are all important.</li>
+</ul>
+<p><strong>Recommended time: 90 minutes</strong></p>
+Good luck!
+</center>
+<h1 id="part-1---programming">Part 1 - Programming</h1>
+<h2 id="question-2-python">Question 1: Python</h2>
+<p>Complete the following function:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">def</span> word_frequencies(url):</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co">    Downloads the content from the given URL and returns a dict {word -&gt; frequency}</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="co">    giving the count of each word on the page. Ignores HTML tags in the response.</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="co">    :param url: Full URL of HTML page</span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="co">    :return: dict {word -&gt; frequency}</span></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="cf">pass</span></a></code></pre></div>
+<h2 id="question-3-django">Question 2: Django ORM</h2>
+<p>Neliti is primarily a website that hosts academic publications. We record views and downloads of these publications in order to give statistics to our customers. This question is about analysing view and download data to produce some meaningful insights. Here is an excerpt of two models:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> Hit(models.Model):</a>
+<a class="sourceLine" id="cb3-2" title="2"></a>
+<a class="sourceLine" id="cb3-3" title="3">    PAGEVIEW <span class="op">=</span> <span class="st">&#39;PV&#39;</span></a>
+<a class="sourceLine" id="cb3-4" title="4">    DOWNLOAD <span class="op">=</span> <span class="st">&#39;DL&#39;</span></a>
+<a class="sourceLine" id="cb3-5" title="5">    ACTIONS <span class="op">=</span> (</a>
+<a class="sourceLine" id="cb3-6" title="6">        (PAGEVIEW, <span class="st">&#39;Article web page view&#39;</span>),</a>
+<a class="sourceLine" id="cb3-7" title="7">        (DOWNLOAD, <span class="st">&#39;Article download&#39;</span>),</a>
+<a class="sourceLine" id="cb3-8" title="8">    )</a>
+<a class="sourceLine" id="cb3-9" title="9"></a>
+<a class="sourceLine" id="cb3-10" title="10">    publication <span class="op">=</span> models.ForeignKey(<span class="st">&#39;Publication&#39;</span>, on_delete<span class="op">=</span>models.CASCADE)</a>
+<a class="sourceLine" id="cb3-11" title="11">    date <span class="op">=</span> models.DateTimeField(default<span class="op">=</span>django.utils.timezone.now)</a>
+<a class="sourceLine" id="cb3-12" title="12">    ip_address <span class="op">=</span> models.GenericIPAddressField()</a>
+<a class="sourceLine" id="cb3-13" title="13">    user_agent <span class="op">=</span> models.ForeignKey(<span class="st">&#39;UserAgent&#39;</span>, on_delete<span class="op">=</span>models.SET_NULL,</a>
+<a class="sourceLine" id="cb3-14" title="14">                                   null<span class="op">=</span><span class="va">True</span>, blank<span class="op">=</span><span class="va">True</span>)</a>
+<a class="sourceLine" id="cb3-15" title="15">    action <span class="op">=</span> models.CharField(max_length<span class="op">=</span><span class="dv">2</span>, choices<span class="op">=</span>ACTIONS)</a>
+<a class="sourceLine" id="cb3-16" title="16"></a>
+<a class="sourceLine" id="cb3-17" title="17"></a>
+<a class="sourceLine" id="cb3-18" title="18"><span class="kw">class</span> Publication(models.Model):</a>
+<a class="sourceLine" id="cb3-19" title="19"></a>
+<a class="sourceLine" id="cb3-20" title="20">    title <span class="op">=</span> models.CharField(max_length<span class="op">=</span><span class="dv">200</span>)</a>
+<a class="sourceLine" id="cb3-21" title="21">    journal <span class="op">=</span> models.ForeignKey(<span class="st">&#39;Journal&#39;</span>, on_delete<span class="op">=</span>models.CASCADE)</a>
+<a class="sourceLine" id="cb3-22" title="22">    <span class="co"># ... remaining fields omitted</span></a></code></pre></div>
+<p>A <code>Publication</code> represents a single journal article on our website (<a href="https://www.neliti.com/publications/66008/">example</a>). Each time a user accesses a publication, we create a new <code>Hit</code> instance. A <code>Hit</code> represents either a single view or a single download of a publication. Publications are arranged into collections called journals - a <code>Journal</code> is a collection of publications of similar subject matter.</p>
+<p>Your task is to write a function <code>get_journal_statistics()</code> that returns a <code>dict</code> mapping journals to summary statistics:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">def</span> get_journal_statistics():</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="co"># Construct summary dict in the form {journal_id -&gt; (total_views, total_downloads)}</span></a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="cf">return</span> summary</a></code></pre></div>
+<p>The return value should be a <code>dict</code> giving summary statistics for all journals in the form</p>
+<pre><code>{journal_id -&gt; (total_views, total_downloads)}</code></pre>
+<p>where</p>
+<ul>
+<li><code>journal_id</code> is the primary key of the journal instance in the <code>Journal</code> table</li>
+<li><code>total_views</code> is the total number of <code>Hit</code> instances for all publications in that journal and all time with <code>action == Hit.PAGEVIEW</code></li>
+<li><code>total_downloads</code> is the total number of <code>Hit</code> instances for all publications in that journal and all time with <code>action == Hit.DOWNLOAD</code>.</li>
+</ul>
+<p>All journals should be present in the result, and your code should correctly handle cases where there are no hits of the given type.</p>
+<h2 id="question-1-es6">Question 3: Django project</h2>
+<p>The specification of this task is vague - as most of the tasks in the real life. 🙂 You need to balance your time and imagination. If you are out of time, feel free to provide a very basic solution, but for bonus points, add any feature, UX or functional.<br/>
+  The task is simple: Create a small weather app in Django. <br/>
+  The app can use the met.no service to acquire data via a GET call:
+  <a href="https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=51.5&lon=-0.25">https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=51.5&lon=-0.25</a> - you need to pass the coordinates only.
+  In the application you need to create a way to input the location and then using that information to display weather information. The whole UX is up to you. (Hint: you will only use a fraction of the data from this service!)
+  <br/><br/>
+  Please create a git repo and update it with your code - as it develops. Try to commit as frequently as possible - with meaningful comments - just as you would do in a real project.
+  At the end of the task, please share the link to your repo.</p>
+<h2 id="question-4-algorithms">Question 4: Algorithms</h2>
+<p>Given a list of integers and a target integer, write a function that expresses the target integer by inserting <code>+</code> and <code>-</code> operations between the list items. For example:</p>
+<pre><code>&gt;&gt;&gt; f([1, 2, 3, 4, 5], 9)
+&#39;9 = 1 + 2 - 3 + 4 + 5&#39;
+&gt;&gt;&gt; f([2, 5, 60, -5, 3], 69)
+&#39;69 = 2 + 5 + 60 - -5 - 3&#39;
+&gt;&gt;&gt; f([2, 5, 10], 50)
+None</code></pre>
+<ul>
+<li>All list items must be used in the solution, they cannot be skipped.</li>
+<li>If there are multiple ways to express the target integer, return any.</li>
+<li>If there is no way to express the target integer, return <code>None</code>.</li>
+<li>Your algorithm should be as efficient as possible.</li>
+</ul>
+<p>Analyse the running time of your algorithm and discuss whether it is optimal.</p>
+<h1 id="part-2---other-questions">Part 2 - Other questions</h1>
+<p>Choose one of the following questions and tell us something interesting!</p>
+<ol type="1">
+<li>Tell us one thing you are very opinionated about as a developer and why.</li>
+<li>Based on your understanding of our company, what do you think our biggest challenge is?</li>
+<li>What’s one cool feature or idea you’d like to implement if you came to work for us?</li>
+</ol>
+<h1 id="thats-it">That’s it! 🚀</h1>
+</body>
+</html>
